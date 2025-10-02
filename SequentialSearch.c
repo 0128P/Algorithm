@@ -14,9 +14,9 @@ void seqsearch(int n, const keytype S[], keytype x, int* location) {
   *location = 1;
   while(*location <= n && S[*location] != x) {
     ++(*location);
+  }
     if(*location > n) {
       *location = 0;
-    }
   }
 }
 
